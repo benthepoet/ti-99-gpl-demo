@@ -1,0 +1,21 @@
+* GROM Header
+
+        DATA >AA01
+        DATA 0,0
+        DATA MENU
+        DATA 0,0
+
+MENU    DATA 0
+        DATA START
+        BYTE 4
+        TEXT 'DEMO'
+
+* Main Program
+
+start   all 32
+        back 0
+
+done    exit
+
+        end
+
