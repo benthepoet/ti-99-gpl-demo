@@ -1,14 +1,14 @@
 * GROM Header
 
-        DATA >AA01
-        DATA 0,0
-        DATA MENU
-        DATA 0,0
+        data >AA01
+        data 0,0
+        data menu
+        data 0,0
 
-MENU    DATA 0
-        DATA START
-        BYTE 4
-        TEXT 'DEMO'
+menu    data 0
+        data start
+        byte 4
+        text 'DEMO'
 
 * Main Program
 
