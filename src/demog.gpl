@@ -16,8 +16,8 @@ pat     text >00080b070404061f
         text >2c312b2916070606
         text >348cd49468e06060
 
-img     text >0102
-        text >0304
+img     text >0001
+        text >0203
 
 color   byte >f0
 
@@ -41,7 +41,7 @@ done    exit
 setup   all >20
         back >01
 
-        move 32,g@pat,v@>808
+        move 32,g@pat,v@>800
 
         move 2,g@img,v@>020
         move 2,g@img+2,v@>040
