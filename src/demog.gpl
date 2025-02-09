@@ -10,10 +10,20 @@ menu    data 0
         byte 4
         text 'DEMO'
 
+* Graphics
+pat     text >00080b070404061f
+        text >0010d0e0202060f8
+        text >2c312b2916070606
+        text >348cd49468e06060
+
+img     text >0102
+        text >0304
+
+color   byte >f0
+
 * Main Program
 
-start   all 32
-        back 0
+start   call setup
 
         fmt
         col 5
@@ -25,7 +35,20 @@ loop    scan
         bs done
         b loop
 
+
 done    exit
+
+setup   all >20
+        back >01
+
+        move 32,g@pat,v@>808
+
+        move 2,g@img,v@>020
+        move 2,g@img+2,v@>040
+
+        move 1,g@color,v@>380
+
+        rtn
 
         end
 
